@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\Compilers\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-std=c++2a",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe", "&&", "${fileBasenameNoExtension}.exe<inputf.txt>outputf.txt"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\Compilers\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
